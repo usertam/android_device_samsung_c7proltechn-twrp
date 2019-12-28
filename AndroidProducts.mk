@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_c7proltedd.mk
+    $(LOCAL_DIR)/omni_c7proltechn.mk

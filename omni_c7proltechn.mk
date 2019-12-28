@@ -29,8 +29,8 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-PRODUCT_NAME := lineage_c7proltedd
-PRODUCT_DEVICE := c7proltedd
+PRODUCT_NAME := omni_c7proltechn
+PRODUCT_DEVICE := c7proltechn
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-C701F
+PRODUCT_MODEL := SM-C7010
 PRODUCT_MANUFACTURER := Samsung

@@ -14,7 +14,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_CPU_CORTEX_A53 := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := c7proltedd,SM-C701F,C701F
+TARGET_OTA_ASSERT_DEVICE := c7proltechn,SM-C7010,C7010
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8953
@@ -47,21 +47,21 @@ TW_INCLUDE_NTFS_3G := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
-BOARD_DTBTOOL_ARG                  := -2
-BOARD_KERNEL_CMDLINE               += console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
-BOARD_KERNEL_IMAGE_NAME		   := Image.gz
-BOARD_KERNEL_PAGESIZE              := 2048
-BOARD_KERNEL_BASE		   := 0x80000000
-BOARD_KERNEL_SEPARATED_DT          := true
-BOARD_KERNEL_TAGS_OFFSET 	   := 0x01E00000
-BOARD_RAMDISK_OFFSET     	   := 0x02000000
-TARGET_KERNEL_SOURCE               := kernel/samsung/c7prolte
+BOARD_DTBTOOL_ARG := -2
+BOARD_KERNEL_CMDLINE += console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_SEPARATED_DT := true
+BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
+BOARD_RAMDISK_OFFSET := 0x02000000
+TARGET_KERNEL_SOURCE := kernel/samsung/c7prolte
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_CONFIG               := c7proltedd_defconfig
+TARGET_KERNEL_CONFIG := c7proltechn_defconfig
 
 # MKBootImg
 BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/c7proltedd/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/c7proltechn/mkbootimg.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8953
@@ -69,7 +69,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
 # TWRP
 TW_EXCLUDE_SUPERSU := true
-TARGET_RECOVERY_FSTAB := device/samsung/c7proltedd/recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/c7proltechn/recovery/root/etc/twrp.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_THEME := portrait_hdpi
